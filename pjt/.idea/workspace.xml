@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="" />
+    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pjt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "C:/SSAFY/프로그램/apache-tomcat-9.0.73/lib/servlet-api.jar",
+    "last_opened_file_path": "C:/SSAFY/back_pjt/pjt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -239,7 +247,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679889575615</updated>
       <workItem from="1679889576743" duration="293000" />
-      <workItem from="1679889884946" duration="12241000" />
+      <workItem from="1679889884946" duration="12665000" />
+      <workItem from="1679905506099" duration="1460000" />
     </task>
     <servers />
   </component>

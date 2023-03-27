@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet("/trip")
 public class TripController extends HttpServlet {
@@ -51,14 +52,12 @@ public class TripController extends HttpServlet {
     }
 
     private String list(HttpServletRequest request, HttpServletResponse response) {
-        Trip trip = new Trip();
-        trip.setTitle(request.getParameter("title"));
-        trip.setAddr1(request.getParameter("addr1"));
-        trip.setLatitude(Double.parseDouble(request.getParameter("latitude")));
-        trip.setLongitude(Double.parseDouble(request.getParameter("longitude")));
-        trip.setImage(request.getParameter("image"));
-
-        request.setAttribute("trip", trip);
+        try {
+            request.setAttribute("trip", service.selectTripBySido(1));
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "/error.jsp";
+        }
         return "/index.jsp";
     }
 }
