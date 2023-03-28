@@ -61,10 +61,12 @@ public class TripController extends HttpServlet {
             int type = Integer.parseInt(request.getParameter("type"));
             String keyword = request.getParameter("keyword") != null ? request.getParameter("keyword") : null;
 
+
             request.setAttribute("tripList", service.search(sido, type, keyword));
+            System.out.println();
         } catch (NumberFormatException | SQLException e) {
             e.printStackTrace();
         }
-        return "/trip?action=list";
+        return "/plan.jsp";
     }
 }

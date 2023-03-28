@@ -52,6 +52,9 @@
             </form>
 
             <div class="row">
+                "
+                ${tripList}
+                "
                 <table class="table table-striped">
                     <tbody id="content-list">
                     <c:forEach items="${tripList}" var="list">

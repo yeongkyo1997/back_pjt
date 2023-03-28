@@ -9,25 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pjt_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/plan.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/plan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pjt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/plan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/plan.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/dto/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/dto/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/TripService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/TripService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/TripServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/TripServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +28,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1c8925d5-afdb-430c-8e26-32c87ad4db44" />
+        <option name="url" value="https://github.com/yeongkyo1997/back_pjt.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -64,6 +62,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -283,11 +282,31 @@
       <workItem from="1679966146501" duration="1003000" />
       <workItem from="1679969194072" duration="2311000" />
       <workItem from="1679974584021" duration="2754000" />
-      <workItem from="1679981107256" duration="6180000" />
+      <workItem from="1679981107256" duration="6766000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1679992858547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679992858547</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <created>1679992879652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679992879652</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
