@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="pjt:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pjt_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/plan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/plan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/test.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pjt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pjt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/dto/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/dto/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/TripService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/TripService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/TripServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/TripServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +44,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Na5ue3M3n8Pc1kqrZtmz2vCBEq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -44,7 +74,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -151,11 +181,12 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="pjt:war exploded">
+        <artifact name="pjt:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/pjt_war_exploded" />
+            <option name="CONTEXT_PATH" value="/pjt_Web_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -233,7 +264,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="pjt:war exploded" />
+          <artifact name="pjt:Web exploded" />
         </option>
       </method>
     </configuration>
@@ -248,7 +279,11 @@
       <updated>1679889575615</updated>
       <workItem from="1679889576743" duration="293000" />
       <workItem from="1679889884946" duration="12665000" />
-      <workItem from="1679905506099" duration="1460000" />
+      <workItem from="1679905506099" duration="1640000" />
+      <workItem from="1679966146501" duration="1003000" />
+      <workItem from="1679969194072" duration="2311000" />
+      <workItem from="1679974584021" duration="2754000" />
+      <workItem from="1679981107256" duration="6180000" />
     </task>
     <servers />
   </component>

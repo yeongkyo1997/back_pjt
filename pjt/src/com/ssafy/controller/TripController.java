@@ -1,16 +1,16 @@
 package com.ssafy.controller;
 
-import com.ssafy.dto.Trip;
-import com.ssafy.model.service.TripService;
-import com.ssafy.model.service.TripServiceImpl;
+import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.sql.SQLException;
+
+import com.ssafy.model.service.TripService;
+import com.ssafy.model.service.TripServiceImpl;
 
 @WebServlet("/trip")
 public class TripController extends HttpServlet {
@@ -22,42 +22,49 @@ public class TripController extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         String action = request.getParameter("action");
-        if (action == null) action = "list";
+        if (action == null)
+            action = "list";
 
         switch (action) {
             case "list":
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
                 break;
-            case "search":
-                request.getRequestDispatcher("/search.jsp").forward(request, response);
-                break;
         }
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         String action = request.getParameter("action");
-        if (action == null) action = "list";
+        if (action == null)
+            action = "list";
 
         switch (action) {
             case "list":
-                request.getRequestDispatcher(list(request, response)).forward(request, response);
+                request.getRequestDispatcher("/plan.jsp").forward(request, response);
                 break;
             case "detail":
                 request.getRequestDispatcher("/detail.jsp").forward(request, response);
                 break;
+            case "search":
+                request.getRequestDispatcher(search(request, response)).forward(request, response);
+                break;
         }
     }
 
-    private String list(HttpServletRequest request, HttpServletResponse response) {
+    private String search(HttpServletRequest request, HttpServletResponse response) {
         try {
-            request.setAttribute("trip", service.selectTripBySido(1));
-        } catch (SQLException e) {
+            int sido = Integer.parseInt(request.getParameter("sido"));
+            int type = Integer.parseInt(request.getParameter("type"));
+            String keyword = request.getParameter("keyword") != null ? request.getParameter("keyword") : null;
+
+            request.setAttribute("tripList", service.search(sido, type, keyword));
+        } catch (NumberFormatException | SQLException e) {
             e.printStackTrace();
-            return "/error.jsp";
         }
-        return "/index.jsp";
+        return "/trip?action=list";
     }
 }

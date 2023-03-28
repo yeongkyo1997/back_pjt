@@ -21,9 +21,12 @@ function makeOption(data) {
 
 btn.addEventListener("click", () => {
   let areaEle = document.getElementById("search-area").value;
-  let keywordEle = document.getElementById("search-keyword").value;
+  let type=document.getElementById("search-content-id").value;
+  let keywordEle = document.getElementById("search-keyword").value || "";
 
-  let url = `https://apis.data.go.kr/B551011/KorService1/searchKeyword1?serviceKey=${serviceKey}&numOfRows=20&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&listYN=Y&arrange=A&keyword=${keywordEle}&areaCode=${areaEle}`;
+  let url= `http://localhost:8080/pjt/trip?action=search&sido=${areaEle}&type=${type}&keyword=${keywordEle}`;
+  console.log(url)
+
 
   fetch(url)
     .then((response) => response.json())

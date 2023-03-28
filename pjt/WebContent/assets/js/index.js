@@ -20,6 +20,7 @@ const sendRequestLocation = async () => {
             let items = data.response.body.items;
             localinfo = items.item;
             setTitle(val);
+            createList(items.item);
         });
 };
 
@@ -43,26 +44,22 @@ function createList(items) {
         label2.className = "travel-info";
         label1.innerHTML = items[i].addr1;
         // [] 안에 있는 모든 문자 제거
-        label2.innerHTML = items[i].title.replace(
-            "[한국관광 품질인증/Korea Quality]",
-            ""
-        );
-
+        label2.innerHTML = items[i].title.replace("[한국관광 품질인증/Korea Quality]", "");
         let div = document.createElement("div");
         div.className = "travel-info-content";
         div.appendChild(label1);
         div.appendChild(label2);
         li.appendChild(img);
         li.appendChild(div);
-
         let btn = document.createElement("button");
         btn.className = "travel-info-btn";
         btn.id = items[i].contentid;
         btn.innerHTML = "정보 더보기";
 
         li.appendChild(btn);
+        travelList.appendChild(li);
 
-        btn.addEventListener("click", (e) => {
+        btn.addEventListener("click", function (e) {
             const areaUrl = `https://apis.data.go.kr/B551011/KorService1/detailCommon1?MobileOS=ETC&MobileApp=app&_type=json&contentId=${e.target.id}&mapinfoYN=Y&overviewYN=Y&serviceKey=${serviceKey}`;
             let x, y;
             fetch(areaUrl, {method: "GET"})
@@ -73,15 +70,12 @@ function createList(items) {
                     y = items.mapy;
 
                     modal.classList.toggle("show");
-
                     var mapContainer = document.getElementById("map");
                     let overviewDiv = document.querySelector("#overview");
-
                     overviewDiv.innerHTML = items.overview;
 
                     var mapOption = {
-                        center: new kakao.maps.LatLng(y, x),
-                        level: 3,
+                        center: new kakao.maps.LatLng(y, x), level: 3,
                     };
 
                     var map = new kakao.maps.Map(mapContainer, mapOption);

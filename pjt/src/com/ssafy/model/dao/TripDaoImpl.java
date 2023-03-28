@@ -23,53 +23,22 @@ public class TripDaoImpl implements TripDao {
     }
 
     @Override
-    public List<Trip> selectTripBySido(int sido_code) throws SQLException {
-        try (Connection con = dbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement("SELECT * FROM trip WHERE sido_code = ?")) {
-            ResultSet rs = pstmt.executeQuery();
-            List<Trip> list = new ArrayList<>();
-            pstmt.setInt(1, sido_code);
+    public List<Trip> selectTripByOption(int sido, int type, String keyword) throws SQLException {
+        StringBuffer sb = new StringBuffer();
+        sb.append("select * from attraction_info where ");
 
-            while (rs.next()) {
-                Trip trip = new Trip();
-                trip.setTitle(rs.getString("title"));
-                trip.setAddr1(rs.getString("addr1"));
-                trip.setLatitude(rs.getDouble("latitude"));
-                trip.setLongitude(rs.getDouble("longitude"));
-                list.add(trip);
-            }
-            return list;
+        if (sido != 0) {
+            sb.append(" sido_code =  ").append(sido).append(" ");
         }
-    }
-
-    @Override
-    public List<Trip> selectTripByGugun(int sido_code, int gugun_code) throws SQLException {
-        try (Connection con = dbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement("select title, addr1,  latitude, longitude " + "where sido_code = ? and gugun_code = ?")) {
-            int idx = 0;
-            pstmt.setInt(++idx, sido_code);
-            pstmt.setInt(++idx, gugun_code);
-
-            ResultSet rs = pstmt.executeQuery();
-            List<Trip> list = new ArrayList<>();
-
-            while (rs.next()) {
-                Trip trip = new Trip();
-                trip.setTitle(rs.getString("title"));
-                trip.setAddr1(rs.getString("addr1"));
-                trip.setLatitude(rs.getDouble("latitude"));
-                trip.setLongitude(rs.getDouble("longitude"));
-                list.add(trip);
-            }
-            return list;
+        if (type != 0) {
+            sb.append("and content_type_id =  ").append(type).append(" ");
         }
-    }
+//		if (keyword != null || keyword.equals("")) {
+//			sb.append("and title like %").append(keyword).append("%");
+//		}
 
-    @Override
-    public List<Trip> selectTripByContent(int sido_code, int gugun_code, String content_type_id) throws SQLException {
-        try (Connection con = dbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement("select title, addr1,  latitude, longitude " + "where sido_code = ? and gugun_code = ? and content_type_id = ?")) {
-            int idx = 0;
-            pstmt.setInt(++idx, sido_code);
-            pstmt.setInt(++idx, gugun_code);
-            pstmt.setString(++idx, content_type_id);
+        System.out.println(sb.toString());
+        try (Connection con = dbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement(sb.toString());) {
 
             ResultSet rs = pstmt.executeQuery();
             List<Trip> list = new ArrayList<>();
@@ -80,8 +49,10 @@ public class TripDaoImpl implements TripDao {
                 trip.setAddr1(rs.getString("addr1"));
                 trip.setLatitude(rs.getDouble("latitude"));
                 trip.setLongitude(rs.getDouble("longitude"));
+                trip.setImage(rs.getString("first_image"));
                 list.add(trip);
             }
+            System.out.println(list.toString());
             return list;
         }
     }
