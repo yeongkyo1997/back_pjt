@@ -24,6 +24,7 @@ public class TripController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	request.setCharacterEncoding("utf-8");
         String action = request.getParameter("action");
         if (action == null)
             action = "list";
@@ -34,6 +35,7 @@ public class TripController extends HttpServlet {
                 break;
         }
     }
+
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -59,11 +61,9 @@ public class TripController extends HttpServlet {
         try {
             int sido = Integer.parseInt(request.getParameter("sido"));
             int type = Integer.parseInt(request.getParameter("type"));
-            String keyword = request.getParameter("keyword") != null ? request.getParameter("keyword") : null;
-
+            String keyword = request.getParameter("keyword");
 
             request.setAttribute("tripList", service.search(sido, type, keyword));
-            System.out.println();
         } catch (NumberFormatException | SQLException e) {
             e.printStackTrace();
         }
