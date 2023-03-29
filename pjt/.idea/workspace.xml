@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/include/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/include/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/plan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/plan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +282,7 @@
       <workItem from="1680047986413" duration="1831000" />
       <workItem from="1680051459161" duration="919000" />
       <workItem from="1680053361458" duration="5753000" />
-      <workItem from="1680065815168" duration="11603000" />
+      <workItem from="1680065815168" duration="12089000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1679992858547</created>
@@ -319,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680077527070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1680078989814</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078989814</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
