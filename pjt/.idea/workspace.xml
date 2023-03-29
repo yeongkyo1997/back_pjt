@@ -10,71 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d150408b-1109-4e2e-9a08-0d210b4ed36a" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/WebContent/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/include/nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/Modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/Modal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/index_festival.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/index_footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/index_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/index_main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/index_modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/index_modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/login_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/login_header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/plan_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/css/plan_main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/assets/js/plan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/plan2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/include/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/include/nav.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/plan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/plan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/plan2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index_festival.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index_footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index_main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/index_modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/info.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/login_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/plan.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/plan_main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/css/register_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/arrow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/empty-heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/fill-heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/kakao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/kakaoicon.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/naver.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/noimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/travel-sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/img/travel-sample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/_.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/key.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/plan.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/assets/js/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/TripController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/dao/TripDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ssafy/model/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ssafy/model/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +289,7 @@
       <workItem from="1680047986413" duration="1831000" />
       <workItem from="1680051459161" duration="919000" />
       <workItem from="1680053361458" duration="5753000" />
-      <workItem from="1680065815168" duration="9839000" />
+      <workItem from="1680065815168" duration="11603000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1679992858547</created>
@@ -371,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679993594198</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1680077527070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680077527070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

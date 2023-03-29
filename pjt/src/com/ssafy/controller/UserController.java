@@ -32,6 +32,7 @@ public class UserController extends HttpServlet {
                 break;
             case "login":
                 response.sendRedirect(request.getContextPath() + login(request, response));
+                break;
             case "update":
                 response.sendRedirect(request.getContextPath() + update(request, response));
                 break;
@@ -51,6 +52,7 @@ public class UserController extends HttpServlet {
                 break;
             case "loginForm":
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
+                break;
             case "logout":
                 HttpSession session = request.getSession();
                 session.invalidate();
@@ -88,12 +90,15 @@ public class UserController extends HttpServlet {
     }
 
     private String login(HttpServletRequest request, HttpServletResponse response) {
+    	System.out.println("login");
         try {
             if (service.login(request.getParameter("id"), request.getParameter("password"))) {
+            	System.out.println("성공");
                 HttpSession session = request.getSession();
-                session.setAttribute("id", request.getParameter("id"));
+                session.setAttribute("loginUser", request.getParameter("id"));
                 return "/index.jsp";
             } else {
+            	System.out.println("실패");
                 return "/user?action=loginForm";
             }
         } catch (SQLException e) {

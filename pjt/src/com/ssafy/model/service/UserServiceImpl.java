@@ -41,7 +41,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean login(String id, String password) throws SQLException {
         User user = dao.selectUserById(id);
-
-        return user != null && user.getPassword().equals(password);
+        if (user != null) {
+            System.out.println("성공");
+            return user.getPassword().equals(password);
+        }
+        System.out.println("실패");
+        return false;
     }
 }
