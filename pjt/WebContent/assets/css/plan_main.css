@@ -1,127 +1,125 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
-    margin-top: 7.5rem;
+	margin-top: 7.5rem;
 }
 
 .content-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .conent-list-detail {
-    width: 18.75rem;
-    list-style: none;
-    background-color: rgb(231, 231, 231);
-    margin-top: 3.125rem;
+	width: 18.75rem;
+	list-style: none;
+	background-color: rgb(231, 231, 231);
+	margin-top: 3.125rem;
 }
 
 div {
-    width: 100%;
+	width: 100%;
 }
 
 .content-list-detail__description {
-    width: 100%;
-    height: 5.625rem;
-    font-size: 0.3125rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    line-height: 0.9375rem;
+	width: 100%;
+	height: 5.625rem;
+	font-size: 0.3125rem;
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+	line-height: 0.9375rem;
 }
 
-img {
-    width: 18.75rem;
+.travel-list-li>img {
+	width: 18.75rem;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 80%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 80%;
 }
 
-th,
-td {
-    padding: 0.625rem;
-    text-align: center;
+th, td {
+	padding: 0.625rem;
+	text-align: center;
 }
 
 th {
-    background-color: #eee;
+	background-color: #eee;
 }
 
 input[type="number"] {
-    width: 3.125rem;
+	width: 3.125rem;
 }
 
 button {
-    border: none;
-    padding: 0.625rem 1.25rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0.25rem 0.125rem;
-    cursor: pointer;
+	border: none;
+	padding: 0.625rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	margin: 0.25rem 0.125rem;
+	cursor: pointer;
 }
 
 .login-btn {
-    color: white;
-    background-color: #4caf50;
+	color: white;
+	background-color: #4caf50;
 }
 
 #checkout-button {
-    display: block;
-    margin: 1.25rem auto;
+	display: block;
+	margin: 1.25rem auto;
 }
 
 .conent-list-detail div {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1.25rem;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1.25rem;
 }
 
 .plan-search {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5625rem;
-    font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.5625rem;
+	font-size: 1.25rem;
 }
 
 .search-item {
-    width: 12.5rem;
-    background-color: #4caf50;
+	width: 12.5rem;
+	background-color: #4caf50;
 }
 
 .content-plan {
-    width: 43.75rem;
+	width: 43.75rem;
 }
 
-.form-select,
-.form-control {
-    margin-top: 0.3125rem;
-    font-size: 1.25rem;
+.form-select, .form-control {
+	margin-top: 0.3125rem;
+	font-size: 1.25rem;
 }
 
 .form-control {
-    width: 15.625rem;
+	width: 15.625rem;
 }
 
 .form-select {
-    display: flex;
-    justify-content: center;
-    font-size: 1.875rem;
-    margin-bottom: 1.5625rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.875rem;
+	margin-bottom: 1.5625rem;
 }
 
 .festival-list-title {
-    margin-left: 4.375rem;
+	margin-left: 4.375rem;
 }
