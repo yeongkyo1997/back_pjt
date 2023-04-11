@@ -40,11 +40,13 @@
 </head>
 <body>
 	<div class="modal">
-		<div class="modal_body">Modal</div>
-	</div>
-	<button class="btn-open-popup">Modal 띄우기</button>
+		<div class="modal-body">
+			<div id="map" style="width: 100%; height: 400px"></div>
+			<div id="overview"></div>
+		</div>
+		<button class="btn-open-popup">Modal 띄우기</button>
 
-	<script>
+		<script>
     const body = document.querySelector("body");
     const modal = document.querySelector(".modal");
     const btnOpenPopup = document.querySelector(".btn-open-popup");
